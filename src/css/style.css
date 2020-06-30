@@ -1,3 +1,221 @@
-body {
-  background-color: violet;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Brushwell';
+  src: url("../Brushwell.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Red Velvet';
+  src: url("../RedVelvet.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Louis George Cafe';
+  src: url("../Louis-George-Cafe.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Next Art';
+  src: local("NEXT ART Thin"), local("NEXTART-Thin"), url("../Nextartthin.woff2") format("woff2"), url("../Nextartthin.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Next Art';
+  src: local("NEXT ART Light"), local("NEXTART-Light"), url("../Nextartlight.woff2") format("woff2"), url("../Nextartlight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.par {
+  margin-left: 5%;
+  font-family: 'Brushwell', sans-serif;
+  font-size: 50px;
+}
+
+.par-font {
+  font-family: 'Next Art', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin: 2% 0 0 5%;
+}
+
+.par-velvet {
+  font-family: 'Red Velvet', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin: 2% 0 0 5%;
+}
+
+.par-louis {
+  font-family: 'Louis George Cafe', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  margin: 2% 0 0 5%;
+}
+
+.container {
+  margin: auto;
+  max-width: 1136px;
+  width: 90%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 65px 0;
+}
+
+.nav {
+  max-width: 991px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-item {
+  font-family: 'Next Art', sans-serif;
+  font-size: 19px;
+  text-decoration: none;
+  letter-spacing: 1.88px;
+  color: #fff;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background: black url("../img/BG.jpg") no-repeat center/cover;
+  color: #fff;
+}
+
+.hero__main-block {
+  text-align: center;
+}
+
+.hero__logo {
+  margin: auto;
+  height: 119px;
+  width: 119px;
+  background: url("../img/logo.png");
+}
+
+.hero__title {
+  margin-bottom: 35px;
+  font-family: 'Brushwell', sans-serif;
+  font-weight: 400;
+  font-size: 76px;
+}
+
+.hero__title::after {
+  content: '';
+  display: block;
+  margin: 33px auto 0;
+  height: 1px;
+  width: 351px;
+  background-color: #fff;
+}
+
+.hero__header {
+  margin-bottom: 36px;
+  font-family: 'Red Velvet', sans-serif;
+  letter-spacing: 0.43px;
+  font-size: 67px;
+}
+
+.hero__par {
+  margin: 0 150px;
+  font-family: 'Louis George Cafe', sans-serif;
+  letter-spacing: 0.94px;
+  font-size: 19px;
+}
+
+.hero__social {
+  position: absolute;
+  top: 40vh;
+  right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 190px;
+}
+
+.aboutme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0;
+}
+
+.aboutme__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.aboutme__stick {
+  height: 368px;
+  width: 4px;
+  background-color: #000;
+}
+
+.aboutme__header {
+  margin-bottom: 23px;
+  font-family: 'Brushwell', sans-serif;
+  font-size: 76px;
+  letter-spacing: 6.77px;
+}
+
+.aboutme__par {
+  margin-bottom: 32px;
+  font-family: 'Louis George Cafe', sans-serif;
+  font-size: 19px;
+  letter-spacing: 0.94px;
+}
+
+.aboutme__btn {
+  padding: 8px 14px;
+  font-family: 'Louis George Cafe', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.94px;
+  border: 1px black solid;
+  background-color: #fff;
 }

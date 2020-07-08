@@ -7,34 +7,34 @@ body
 
 @font-face 
   font-family: 'Brushwell'
-  src: url('../Brushwell.woff') format('woff')
+  src: url('../fonts/Brushwell.woff') format('woff')
   font-weight: normal
   font-style: normal
   font-display: swap
 
 @font-face 
   font-family: 'Red Velvet'
-  src: url('../RedVelvet.woff') format('woff')
+  src: url('../fonts/RedVelvet.woff') format('woff')
   font-weight: normal
   font-style: normal
   font-display: swap
   
 @font-face 
   font-family: 'Louis George Cafe'
-  src: url('../Louis-George-Cafe.woff') format('woff')
+  src: url('../fonts/Louis-George-Cafe.woff') format('woff')
   font-weight: normal
   font-style: normal
   font-display: swap
 
 @font-face 
   font-family: 'Next Art'
-  src: local('NEXT ART Thin'), local('NEXTART-Thin'), url('../Nextartthin.woff2') format('woff2'), url('../Nextartthin.woff') format('woff')
+  src: local('NEXT ART Thin'), local('NEXTART-Thin'), url('../fonts/Nextartthin.woff2') format('woff2'), url('../fonts/Nextartthin.woff') format('woff')
   font-weight: 200
   font-style: normal
   font-display: swap
 @font-face 
   font-family: 'Next Art'
-  src: local('NEXT ART Light'), local('NEXTART-Light'), url('../Nextartlight.woff2') format('woff2'), url('../Nextartlight.woff') format('woff')
+  src: local('NEXT ART Light'), local('NEXTART-Light'), url('../fonts/Nextartlight.woff2') format('woff2'), url('../fonts/Nextartlight.woff') format('woff')
   font-weight: 300
   font-style: normal
   font-display: swap
@@ -65,7 +65,7 @@ body
   width: 90%
 
 .header
-  position: fixed
+  position: absolute
   top: 0
   left: 0
   right: 0
@@ -134,28 +134,86 @@ body
   padding: 80px 0
   &__box
     display: flex
-    justify-content: space-around
-  &__photo
+    justify-content: center
+  &__photo img 
+    margin-top: 25px  
   &__stick
+    margin: 0 30px 0 45px
     height: 368px
-    width: 4px
+    width: 1px
     background-color: #000
   &__block
   &__header
-    margin-bottom: 23px
+    margin-bottom: 6px
     font-family: 'Brushwell', sans-serif
     font-size: 76px
     letter-spacing: 6.77px
   &__par
     margin-bottom: 32px
     font-family: 'Louis George Cafe', sans-serif
+    max-width: 525px
     font-size: 19px
+    line-height: 30px
     letter-spacing: 0.94px
   &__btn
     padding: 8px 14px
     font-family: 'Louis George Cafe', sans-serif
     font-size: 16px
+    font-weight: 400
     text-transform: uppercase 
     letter-spacing: 0.94px
     border: 1px black solid
-    background-color: #fff
+    background-color: transparent
+    transition: 0.5s
+    &:hover
+      color: #fff
+      border: #fff 1px solid
+      background-color: black
+
+.portfolio
+  text-align: center
+  &__block
+    padding: 26px
+    background: brown url('../img/portfolio-bg.png') no-repeat center / cover
+  &__header
+    font-family: 'Brushwell', sans-serif
+    font-size: 76px
+    letter-spacing: 6.77px
+  &__title
+    margin-bottom: 10px
+    font-family: "Red Velvet"
+    font-size: 67px
+    letter-spacing: 0.43px
+  &__subtitle
+    margin-bottom: 45px
+    font-family: "Red Velvet"
+    font-size: 29px
+    line-height: 57.39px
+  &__btn
+    padding: 9px 46px
+    border: 1px black solid
+    font-size: 19px
+    font-weight: 400
+    font-family: "Louis George Cafe"
+    text-transform: uppercase
+    background-color: transparent
+  &__gall
+    padding: 65px
+
+.video
+  text-align: center
+  &__block
+    padding: 85px 0px 68px 0px
+    background: grey url('../img/video-bg.png') no-repeat center / cover
+  &__title
+    font-family: "Red Velvet"
+    font-size: 67px
+    text-transform: uppercase 
+    letter-spacing: 0.43px
+    color: #fff
+  &__subtitle
+    // max-width: 805px
+    font-family: "Red Velvet"
+    font-size: 29px
+    line-height: 57.39px
+    color: #2b2b2b
